@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serifz;
+}
+
+.bg-container{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: url('images/superman.jpg') center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(10px);
+    z-index: 1;
+    -webkit-filter: blur(10px);
+}
+
+.navbar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    color: white;
+    font-weight: 700;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.libraryBtn{
+    padding: 5px 15px;
+    border: 2px solid rgb(23, 114, 105);
+    background: transparent;
+    color: rgb(23, 114, 105);
+    cursor: pointer;
+    border-radius:9px;
+}
+
+.libraryBtnClicked{
+    border: 2px solid rgb(23, 114, 105);
+    background-color: rgb(23, 114, 105);
+    color: white
+}
+
+.library{
+    background-color: rgb(67, 165, 155);
+    width: 360px;
+    height: 100vh;
+    box-shadow: 0 0 8px 0;
+    padding: 50px;
+    position: absolute;
+    top: 0;
+    left: -700px;
+    transition: 0.5s;
+    z-index: 2;
+    overflow-x: scroll;
+}
+
+.navbarHalf{
+    width:72%;
+}
+
+.showmenu{
+    left: 0px;
+}
+
+.library li{
+    list-style-type: none;
+    font-size: 20px;
+    display: block;
+    cursor: pointer;
+}
+
+.itemClicked{
+    background-color: rgb(23, 114, 105);
+}
+
+.container
+{
+    color: white;
+    top: 100px;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    float: right;
+    padding: 20px 100px;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.containerHalf{
+    width: 72%;
+}
+
+.coverImg{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+
+}
+
+#myProgressBar{
+    width: 600px;
+}
+
+.icons{
+    width: 600px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+.libImgs{
+    border-radius: 50%;
+    margin-right: 20px;
+    height: 50px;
+    width: 50px;
+}
+
+.libraryItem{
+    display: flex;
+    padding: 20px 30px;
+    border-bottom: 2px solid rgb(23, 114, 105);
+    align-items: center;
+}
+
+#myProgressBar{
+    background-color: rgb(23, 114, 105);
+}
+
+#previous, #next, #playBtn {
+    color: rgb(2, 78, 71);
+}
