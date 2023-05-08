@@ -1,5 +1,5 @@
 # Music-Player
-A Music Player Website made using HTML, CSS, and JavaScript.
+A Music Player Website made using HTML, CSS, and JavaScript with an in-built library of songs.
 
 Screenshots:
 
